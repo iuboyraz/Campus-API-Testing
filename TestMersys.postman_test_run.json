@@ -1,0 +1,1728 @@
+{
+	"id": "c4c1c7f3-32c2-4364-a034-8c5a9178af78",
+	"name": "TestMersys",
+	"timestamp": "2023-11-03T13:22:35.334Z",
+	"collection_id": "30574296-70b1af08-f628-42c7-a80e-f4c4a5686a02",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 63,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-11-03T13:22:24.206Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "5b73aec4-6bef-4c39-a7c5-d413a37eb5fd",
+			"name": "LoginFailed",
+			"url": "https://test.mersys.io/auth/login",
+			"time": 212,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Test Passed. Status code is 401": true
+			},
+			"testPassFailCounts": {
+				"Test Passed. Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				212
+			],
+			"allTests": [
+				{
+					"Test Passed. Status code is 401": true
+				}
+			]
+		},
+		{
+			"id": "8923aaa3-6285-4d13-b5e2-1df5fda7a19e",
+			"name": "LoginSuccess",
+			"url": "https://test.mersys.io/auth/login",
+			"time": 364,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Test Passed. Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Test Passed. Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				364
+			],
+			"allTests": [
+				{
+					"Test Passed. Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "804ad9a2-5953-4a97-8b38-2fa8e797e294",
+			"name": "Position Categories List",
+			"url": "https://test.mersys.io/school-service/api/position-category/search",
+			"time": 162,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Position categories have been listed successfully.": true,
+				"Response is an array with at least one element": true,
+				"Id is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Position categories have been listed successfully.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an array with at least one element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				162
+			],
+			"allTests": [
+				{
+					"Position categories have been listed successfully.": true,
+					"Response is an array with at least one element": true,
+					"Id is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "67fbff53-f168-4c3d-8b72-b83f2a15637e",
+			"name": "Create Position Category",
+			"url": "https://test.mersys.io/school-service/api/position-category",
+			"time": 120,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"A new position category has been created successfully.": true
+			},
+			"testPassFailCounts": {
+				"A new position category has been created successfully.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"A new position category has been created successfully.": true
+				}
+			]
+		},
+		{
+			"id": "eac9ea15-36a2-4fa8-a616-e3ab635fd83a",
+			"name": "Create Position Category Negative",
+			"url": "https://test.mersys.io/school-service/api/position-category",
+			"time": 115,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"A new position category has not been created due to exist.": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"A new position category has not been created due to exist.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				115
+			],
+			"allTests": [
+				{
+					"A new position category has not been created due to exist.": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "eebd1eda-e272-4b33-b137-747043cae83d",
+			"name": "Edit Position Category",
+			"url": "https://test.mersys.io/school-service/api/position-category",
+			"time": 127,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"The attestation has been edited successfully.": true
+			},
+			"testPassFailCounts": {
+				"The attestation has been edited successfully.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				127
+			],
+			"allTests": [
+				{
+					"The attestation has been edited successfully.": true
+				}
+			]
+		},
+		{
+			"id": "9b0fed12-fa2d-48ab-b7a3-cec9b97ebe74",
+			"name": "Edit Position Category Negative",
+			"url": "https://test.mersys.io/school-service/api/position-category",
+			"time": 124,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"The position category has not been edited due to exist.": true
+			},
+			"testPassFailCounts": {
+				"The position category has not been edited due to exist.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				124
+			],
+			"allTests": [
+				{
+					"The position category has not been edited due to exist.": true
+				}
+			]
+		},
+		{
+			"id": "1b320ae5-d740-43fa-86cf-37f98e68c3b3",
+			"name": "Delete Position Category",
+			"url": "https://test.mersys.io/school-service/api/position-category/6544f412e814a84585f1cfde",
+			"time": 101,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"The position category has been deleted successfully.": true
+			},
+			"testPassFailCounts": {
+				"The position category has been deleted successfully.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				101
+			],
+			"allTests": [
+				{
+					"The position category has been deleted successfully.": true
+				}
+			]
+		},
+		{
+			"id": "4abe71e3-9019-48fe-8adb-77364acf16a1",
+			"name": "Delete Position Category Negative",
+			"url": "https://test.mersys.io/school-service/api/position-category/6544f412e814a84585f1cfde",
+			"time": 98,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Deletion did not take a place due to deleted before.": true
+			},
+			"testPassFailCounts": {
+				"Deletion did not take a place due to deleted before.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Deletion did not take a place due to deleted before.": true
+				}
+			]
+		},
+		{
+			"id": "54eae882-fee3-4ca5-8937-ecb9dcfdeeb5",
+			"name": "Attestations List",
+			"url": "https://test.mersys.io/school-service/api/attestation/search",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Attestations have been listed successfully.": true,
+				"Response is an array with at least one element": true,
+				"Id is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Attestations have been listed successfully.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an array with at least one element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Attestations have been listed successfully.": true,
+					"Response is an array with at least one element": true,
+					"Id is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "9156cfe5-53c8-44c0-87de-cf69fa364b9c",
+			"name": "Create Attestation",
+			"url": "https://test.mersys.io/school-service/api/attestation",
+			"time": 120,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"A new attestation has been created successfully.": true,
+				"Id is a non-empty string": true,
+				"Name is a non-empty string": true,
+				"TranslateName should be null": true
+			},
+			"testPassFailCounts": {
+				"A new attestation has been created successfully.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"TranslateName should be null": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"A new attestation has been created successfully.": true,
+					"Id is a non-empty string": true,
+					"Name is a non-empty string": true,
+					"TranslateName should be null": true
+				}
+			]
+		},
+		{
+			"id": "e14e3099-dfc3-46ff-a009-8b2f9f9a9449",
+			"name": "Create Attestation Negative",
+			"url": "https://test.mersys.io/school-service/api/attestation",
+			"time": 111,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"A new attestation has not been created due to exist.": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"A new attestation has not been created due to exist.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				111
+			],
+			"allTests": [
+				{
+					"A new attestation has not been created due to exist.": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "712a733e-d2dd-4283-a4c6-bb72a71a4ff6",
+			"name": "Edit Attestation",
+			"url": "https://test.mersys.io/school-service/api/attestation",
+			"time": 125,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"The attestation has been edited successfully.": true,
+				"Id is a non-empty string": true,
+				"Name is a non-empty string": true,
+				"TranslateName is either null or a string": true
+			},
+			"testPassFailCounts": {
+				"The attestation has been edited successfully.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"TranslateName is either null or a string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				125
+			],
+			"allTests": [
+				{
+					"The attestation has been edited successfully.": true,
+					"Id is a non-empty string": true,
+					"Name is a non-empty string": true,
+					"TranslateName is either null or a string": true
+				}
+			]
+		},
+		{
+			"id": "2e86406d-77e9-410c-9362-fa70e1d5d1cd",
+			"name": "Edit Attestation Negative",
+			"url": "https://test.mersys.io/school-service/api/attestation",
+			"time": 118,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"The attestation has not been edited due to exist.": true
+			},
+			"testPassFailCounts": {
+				"The attestation has not been edited due to exist.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"The attestation has not been edited due to exist.": true
+				}
+			]
+		},
+		{
+			"id": "af9d06fd-bf0d-41bc-abea-d8fa03abccb6",
+			"name": "Delete Attestation",
+			"url": "https://test.mersys.io/school-service/api/attestation/6544f413e814a84585f1cfdf",
+			"time": 102,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"The attestation has been deleted successfully.": true
+			},
+			"testPassFailCounts": {
+				"The attestation has been deleted successfully.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				102
+			],
+			"allTests": [
+				{
+					"The attestation has been deleted successfully.": true
+				}
+			]
+		},
+		{
+			"id": "e3b13ea9-f0b1-4ab0-966e-d3a76036d537",
+			"name": "Delete Attestation Negative",
+			"url": "https://test.mersys.io/school-service/api/attestation/6544f413e814a84585f1cfdf",
+			"time": 98,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Deletion did not take a place due to deleted before.": true
+			},
+			"testPassFailCounts": {
+				"Deletion did not take a place due to deleted before.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Deletion did not take a place due to deleted before.": true
+				}
+			]
+		},
+		{
+			"id": "b78bbd6c-04a4-4ead-a41a-7e3725270f05",
+			"name": "Document Types List",
+			"url": "https://test.mersys.io/school-service/api/attachments/search",
+			"time": 99,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				99
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "935319ec-00d5-47db-887f-b59481763565",
+			"name": "Create Document Type",
+			"url": "https://test.mersys.io/school-service/api/attachments/create",
+			"time": 98,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "e84200d4-c4b2-478b-ab23-e299cedd9424",
+			"name": "Create Document Type Negative",
+			"url": "https://test.mersys.io/school-service/api/attachments/create",
+			"time": 95,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				95
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			]
+		},
+		{
+			"id": "3d25b14d-86a7-4fa9-aa73-1cc5730b3114",
+			"name": "Edit Document Type",
+			"url": "https://test.mersys.io/school-service/api/attachments/",
+			"time": 103,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				103
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "7ec4c455-0176-4722-8b7d-4e2bd29c85a5",
+			"name": "Delete Document Type",
+			"url": "https://test.mersys.io/school-service/api/attachments/6544f414e814a84585f1cfe0",
+			"time": 101,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				101
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ea1bfa9c-5f12-4728-834b-8fe6eefcc1db",
+			"name": "Delete Document Type Negative",
+			"url": "https://test.mersys.io/school-service/api/attachments/6544f414e814a84585f1cfe0",
+			"time": 96,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				96
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			]
+		},
+		{
+			"id": "42b117c4-21de-4d50-b394-5fcbcf9d9819",
+			"name": "Fields List",
+			"url": "https://test.mersys.io/school-service/api/entity-field/search",
+			"time": 98,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "6a201529-f038-4f7b-bce7-2c9fa209cc38",
+			"name": "Create Field",
+			"url": "https://test.mersys.io/school-service/api/entity-field",
+			"time": 99,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				99
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "b6ae5b18-6da4-4d44-aaa3-6748136de192",
+			"name": "Create Field Negative",
+			"url": "https://test.mersys.io/school-service/api/entity-field",
+			"time": 93,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				93
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			]
+		},
+		{
+			"id": "46f0eb49-2bca-43fa-a833-aeca94b48627",
+			"name": "Edit Field",
+			"url": "https://test.mersys.io/school-service/api/entity-field",
+			"time": 98,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "78ddbe9d-46bf-4020-88e1-068c7b43910f",
+			"name": "Delete Field",
+			"url": "https://test.mersys.io/school-service/api/entity-field/6544f415e814a84585f1cfe1",
+			"time": 100,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				100
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "7de153aa-54d2-4f8f-924b-65ce72c58363",
+			"name": "Delete Filed Negative",
+			"url": "https://test.mersys.io/school-service/api/entity-field/6544f415e814a84585f1cfe1",
+			"time": 97,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				97
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			]
+		},
+		{
+			"id": "c15d91a7-5ddd-43e6-8846-28cbdc47c225",
+			"name": "Positions Add",
+			"url": "https://test.mersys.io/school-service/api/employee-position",
+			"time": 106,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				106
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "761a515a-d67a-4920-b28d-7e4c86565e9d",
+			"name": "Positions Search",
+			"url": "https://test.mersys.io/school-service/api/employee-position/search",
+			"time": 125,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				125
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "4a70eb44-de59-4d34-b705-f7e7466c16c7",
+			"name": "Positions Update",
+			"url": "https://test.mersys.io/school-service/api/employee-position",
+			"time": 111,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				111
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "cd789412-3c8c-41a7-9e08-3e4d89f68a57",
+			"name": "Positions Delete",
+			"url": "https://test.mersys.io/school-service/api/employee-position/6544f416e814a84585f1cfe2",
+			"time": 98,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "cb5999ea-55ba-481f-972d-159102951732",
+			"name": "SubjectCategories Add",
+			"url": "https://test.mersys.io/school-service/api/subject-categories",
+			"time": 115,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				115
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "343edac0-c1ba-418d-a653-03c229abfa6f",
+			"name": "SubjectCategories Search",
+			"url": "https://test.mersys.io/school-service/api/subject-categories/search",
+			"time": 110,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				110
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "958437b8-d5ee-4150-b255-56c38d98f27d",
+			"name": "SubjectCategories Update",
+			"url": "https://test.mersys.io/school-service/api/subject-categories",
+			"time": 113,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				113
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f95f9da6-fe28-45a9-95f1-970feff9f51e",
+			"name": "SubjectCategories Delete",
+			"url": "https://test.mersys.io/school-service/api/subject-categories/6544f417e814a84585f1cfe3",
+			"time": 105,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				105
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f0fb715c-c6a9-403e-8c13-43fe2b048830",
+			"name": "SchoolLocationClick",
+			"url": "https://test.mersys.io/school-service/api/school/646cbb07acf2ee0d37c6d984/location",
+			"time": 111,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				111
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "2eee29ac-5363-46fe-90ca-4e98a6063a55",
+			"name": "AddNewLocation",
+			"url": "https://test.mersys.io/school-service/api/location",
+			"time": 108,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Adding new location has been created successfully": true
+			},
+			"testPassFailCounts": {
+				"Adding new location has been created successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				108
+			],
+			"allTests": [
+				{
+					"Adding new location has been created successfully": true
+				}
+			]
+		},
+		{
+			"id": "bda320e8-c90e-41c0-8687-a688a485e663",
+			"name": "EditExistingLocation",
+			"url": "https://test.mersys.io/school-service/api/location",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Editing exisist location has been updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Editing exisist location has been updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Editing exisist location has been updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "920d4601-b8de-4e2a-b696-046e8a2ecd0a",
+			"name": "EditExistingLocationNegative",
+			"url": "https://test.mersys.io/school-service/api/location",
+			"time": 92,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Editing exisist location has been updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Editing exisist location has been updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				92
+			],
+			"allTests": [
+				{
+					"Editing exisist location has been updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "e22ab5fb-f669-4f46-9240-2e2a754dd4f1",
+			"name": "DeleteExistingLocationPositiveTest",
+			"url": "https://test.mersys.io/school-service/api/location/6544f418e814a84585f1cfe4",
+			"time": 105,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Deleting exisist location has been deleted successfully": true
+			},
+			"testPassFailCounts": {
+				"Deleting exisist location has been deleted successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				105
+			],
+			"allTests": [
+				{
+					"Deleting exisist location has been deleted successfully": true
+				}
+			]
+		},
+		{
+			"id": "bb53c2ea-3169-42cd-a152-fa335aa2625d",
+			"name": "DeleteExistingLocationNegativeTest",
+			"url": "https://test.mersys.io/school-service/api/location/6544f418e814a84585f1cfe4",
+			"time": 95,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Deleting not exisist location has not been deleted successfully": true
+			},
+			"testPassFailCounts": {
+				"Deleting not exisist location has not been deleted successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				95
+			],
+			"allTests": [
+				{
+					"Deleting not exisist location has not been deleted successfully": true
+				}
+			]
+		},
+		{
+			"id": "e423cabd-1563-4c0a-a7c9-da314a395ccb",
+			"name": "SchoolDepartmentClick",
+			"url": "https://test.mersys.io/school-service/api/school/646cbb07acf2ee0d37c6d984/department",
+			"time": 107,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				107
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "3be53752-d00f-4178-a967-c3c870e0f83d",
+			"name": "AddNewDepartment",
+			"url": "https://test.mersys.io/school-service/api/department",
+			"time": 115,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Adding new Department has been created successfully": true
+			},
+			"testPassFailCounts": {
+				"Adding new Department has been created successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				115
+			],
+			"allTests": [
+				{
+					"Adding new Department has been created successfully": true
+				}
+			]
+		},
+		{
+			"id": "7398885c-2337-4059-8ac2-9dd71482325f",
+			"name": "EditExistingDepartment",
+			"url": "https://test.mersys.io/school-service/api/department",
+			"time": 123,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Editing exisist Department has been updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Editing exisist Department has been updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				123
+			],
+			"allTests": [
+				{
+					"Editing exisist Department has been updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "3081fa21-9ae2-4ed4-bd3c-46ec25d67e1c",
+			"name": "EditExistingDepartmentNegative",
+			"url": "https://test.mersys.io/school-service/api/department",
+			"time": 94,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Editing exisist Department has been updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Editing exisist Department has been updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				94
+			],
+			"allTests": [
+				{
+					"Editing exisist Department has been updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "f7e72d7a-b08f-4b53-842f-b9ffc4d39cfd",
+			"name": "DeleteExistingDepartmentPositiveTest",
+			"url": "https://test.mersys.io/school-service/api/department/6544f419e814a84585f1cfe5",
+			"time": 136,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Deleting exisist Department has been deleted successfully": true
+			},
+			"testPassFailCounts": {
+				"Deleting exisist Department has been deleted successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				136
+			],
+			"allTests": [
+				{
+					"Deleting exisist Department has been deleted successfully": true
+				}
+			]
+		},
+		{
+			"id": "3235b624-4e8c-4e31-b2d8-93bc41a72788",
+			"name": "DeleteExistingDepartmentNegativeTest",
+			"url": "https://test.mersys.io/school-service/api/department/6544f419e814a84585f1cfe5",
+			"time": 117,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Deleting not exisist Department has not been deleted successfully": true
+			},
+			"testPassFailCounts": {
+				"Deleting not exisist Department has not been deleted successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				117
+			],
+			"allTests": [
+				{
+					"Deleting not exisist Department has not been deleted successfully": true
+				}
+			]
+		},
+		{
+			"id": "b9ab1757-25b3-417d-b991-d22ee950c707",
+			"name": "GradeLevelsAdd",
+			"url": "https://test.mersys.io/school-service/api/grade-levels",
+			"time": 112,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Test Passed. Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Test Passed. Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				112
+			],
+			"allTests": [
+				{
+					"Test Passed. Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "3eed31b3-6792-49b0-b921-af69bdb7ecb8",
+			"name": "GradeLevelsEdit",
+			"url": "https://test.mersys.io/school-service/api/grade-levels",
+			"time": 139,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Test Passed. Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Test Passed. Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				139
+			],
+			"allTests": [
+				{
+					"Test Passed. Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "2e1515d1-cdc6-4836-b814-afbf255881a2",
+			"name": "GradeLevelsDelete",
+			"url": "https://test.mersys.io/school-service/api/grade-levels/6544f41ae814a84585f1cfe6",
+			"time": 114,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Test Passed. Status code is 200. Test Passed.": true
+			},
+			"testPassFailCounts": {
+				"Test Passed. Status code is 200. Test Passed.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				114
+			],
+			"allTests": [
+				{
+					"Test Passed. Status code is 200. Test Passed.": true
+				}
+			]
+		},
+		{
+			"id": "d166ca65-af9b-459b-9fa4-09b8781db45d",
+			"name": "AllGrades",
+			"url": "https://test.mersys.io/school-service/api/grade-levels/school/646cbb07acf2ee0d37c6d984",
+			"time": 117,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				117
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "51b2c08c-01b5-4107-b843-3075c1e4023d",
+			"name": "AllGradesDelete",
+			"url": "https://test.mersys.io/school-service/api/grade-levels/64c7fd4dc4f4db5f52789c66",
+			"time": 116,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Test Passed. Status code is 200. Test Passed.": false
+			},
+			"testPassFailCounts": {
+				"Test Passed. Status code is 200. Test Passed.": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				116
+			],
+			"allTests": [
+				{
+					"Test Passed. Status code is 200. Test Passed.": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 6196,
+	"collection": {
+		"requests": [
+			{
+				"id": "5b73aec4-6bef-4c39-a7c5-d413a37eb5fd",
+				"method": "POST"
+			},
+			{
+				"id": "8923aaa3-6285-4d13-b5e2-1df5fda7a19e",
+				"method": "POST"
+			},
+			{
+				"id": "804ad9a2-5953-4a97-8b38-2fa8e797e294",
+				"method": "POST"
+			},
+			{
+				"id": "67fbff53-f168-4c3d-8b72-b83f2a15637e",
+				"method": "POST"
+			},
+			{
+				"id": "eac9ea15-36a2-4fa8-a616-e3ab635fd83a",
+				"method": "POST"
+			},
+			{
+				"id": "eebd1eda-e272-4b33-b137-747043cae83d",
+				"method": "PUT"
+			},
+			{
+				"id": "9b0fed12-fa2d-48ab-b7a3-cec9b97ebe74",
+				"method": "PUT"
+			},
+			{
+				"id": "1b320ae5-d740-43fa-86cf-37f98e68c3b3",
+				"method": "DELETE"
+			},
+			{
+				"id": "4abe71e3-9019-48fe-8adb-77364acf16a1",
+				"method": "DELETE"
+			},
+			{
+				"id": "54eae882-fee3-4ca5-8937-ecb9dcfdeeb5",
+				"method": "POST"
+			},
+			{
+				"id": "9156cfe5-53c8-44c0-87de-cf69fa364b9c",
+				"method": "POST"
+			},
+			{
+				"id": "e14e3099-dfc3-46ff-a009-8b2f9f9a9449",
+				"method": "POST"
+			},
+			{
+				"id": "712a733e-d2dd-4283-a4c6-bb72a71a4ff6",
+				"method": "PUT"
+			},
+			{
+				"id": "2e86406d-77e9-410c-9362-fa70e1d5d1cd",
+				"method": "PUT"
+			},
+			{
+				"id": "af9d06fd-bf0d-41bc-abea-d8fa03abccb6",
+				"method": "DELETE"
+			},
+			{
+				"id": "e3b13ea9-f0b1-4ab0-966e-d3a76036d537",
+				"method": "DELETE"
+			},
+			{
+				"id": "b78bbd6c-04a4-4ead-a41a-7e3725270f05",
+				"method": "POST"
+			},
+			{
+				"id": "935319ec-00d5-47db-887f-b59481763565",
+				"method": "POST"
+			},
+			{
+				"id": "e84200d4-c4b2-478b-ab23-e299cedd9424",
+				"method": "POST"
+			},
+			{
+				"id": "3d25b14d-86a7-4fa9-aa73-1cc5730b3114",
+				"method": "PUT"
+			},
+			{
+				"id": "7ec4c455-0176-4722-8b7d-4e2bd29c85a5",
+				"method": "DELETE"
+			},
+			{
+				"id": "ea1bfa9c-5f12-4728-834b-8fe6eefcc1db",
+				"method": "DELETE"
+			},
+			{
+				"id": "42b117c4-21de-4d50-b394-5fcbcf9d9819",
+				"method": "POST"
+			},
+			{
+				"id": "6a201529-f038-4f7b-bce7-2c9fa209cc38",
+				"method": "POST"
+			},
+			{
+				"id": "b6ae5b18-6da4-4d44-aaa3-6748136de192",
+				"method": "POST"
+			},
+			{
+				"id": "46f0eb49-2bca-43fa-a833-aeca94b48627",
+				"method": "PUT"
+			},
+			{
+				"id": "78ddbe9d-46bf-4020-88e1-068c7b43910f",
+				"method": "DELETE"
+			},
+			{
+				"id": "7de153aa-54d2-4f8f-924b-65ce72c58363",
+				"method": "DELETE"
+			},
+			{
+				"id": "c15d91a7-5ddd-43e6-8846-28cbdc47c225",
+				"method": "POST"
+			},
+			{
+				"id": "761a515a-d67a-4920-b28d-7e4c86565e9d",
+				"method": "POST"
+			},
+			{
+				"id": "4a70eb44-de59-4d34-b705-f7e7466c16c7",
+				"method": "PUT"
+			},
+			{
+				"id": "cd789412-3c8c-41a7-9e08-3e4d89f68a57",
+				"method": "DELETE"
+			},
+			{
+				"id": "cb5999ea-55ba-481f-972d-159102951732",
+				"method": "POST"
+			},
+			{
+				"id": "343edac0-c1ba-418d-a653-03c229abfa6f",
+				"method": "POST"
+			},
+			{
+				"id": "958437b8-d5ee-4150-b255-56c38d98f27d",
+				"method": "PUT"
+			},
+			{
+				"id": "f95f9da6-fe28-45a9-95f1-970feff9f51e",
+				"method": "DELETE"
+			},
+			{
+				"id": "f0fb715c-c6a9-403e-8c13-43fe2b048830",
+				"method": "GET"
+			},
+			{
+				"id": "2eee29ac-5363-46fe-90ca-4e98a6063a55",
+				"method": "POST"
+			},
+			{
+				"id": "bda320e8-c90e-41c0-8687-a688a485e663",
+				"method": "PUT"
+			},
+			{
+				"id": "920d4601-b8de-4e2a-b696-046e8a2ecd0a",
+				"method": "PUT"
+			},
+			{
+				"id": "e22ab5fb-f669-4f46-9240-2e2a754dd4f1",
+				"method": "DELETE"
+			},
+			{
+				"id": "bb53c2ea-3169-42cd-a152-fa335aa2625d",
+				"method": "DELETE"
+			},
+			{
+				"id": "e423cabd-1563-4c0a-a7c9-da314a395ccb",
+				"method": "GET"
+			},
+			{
+				"id": "3be53752-d00f-4178-a967-c3c870e0f83d",
+				"method": "POST"
+			},
+			{
+				"id": "7398885c-2337-4059-8ac2-9dd71482325f",
+				"method": "PUT"
+			},
+			{
+				"id": "3081fa21-9ae2-4ed4-bd3c-46ec25d67e1c",
+				"method": "PUT"
+			},
+			{
+				"id": "f7e72d7a-b08f-4b53-842f-b9ffc4d39cfd",
+				"method": "DELETE"
+			},
+			{
+				"id": "3235b624-4e8c-4e31-b2d8-93bc41a72788",
+				"method": "DELETE"
+			},
+			{
+				"id": "b9ab1757-25b3-417d-b991-d22ee950c707",
+				"method": "POST"
+			},
+			{
+				"id": "3eed31b3-6792-49b0-b921-af69bdb7ecb8",
+				"method": "PUT"
+			},
+			{
+				"id": "2e1515d1-cdc6-4836-b814-afbf255881a2",
+				"method": "DELETE"
+			},
+			{
+				"id": "d166ca65-af9b-459b-9fa4-09b8781db45d",
+				"method": "GET"
+			},
+			{
+				"id": "51b2c08c-01b5-4107-b843-3075c1e4023d",
+				"method": "DELETE"
+			}
+		]
+	}
+}
